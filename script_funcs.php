@@ -1,6 +1,5 @@
 <?php
-const ROOT_SCRIPTS_PATH = 'scripts_src/frp';
-const ROOT_DIALOGS_PATH = 'dialogs/frp';
+require_once 'config.php';
 
 function recursiveParseScriptDefines($filename, &$result){
 	if(file_exists(ROOT_SCRIPTS_PATH . '/' . $filename)){
